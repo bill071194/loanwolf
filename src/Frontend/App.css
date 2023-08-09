@@ -1,0 +1,559 @@
+/*--------
+LOAN CHART
+--------*/
+
+.chart h1 {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.chart h4 {
+  text-align: center;
+}
+
+.chart {
+  background-color: white;
+}
+
+/*-------
+LOAN CARD
+-------*/
+
+.card {
+  background-color: #f8fcff;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 4%;
+  display: inline-flex;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-style: dashed;
+}
+
+.card h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.card button {
+  margin-left: 15%;
+  margin-right: 5%;
+  display: inline-block;
+  margin-top: 2%;
+}
+
+.container {
+  background-color: rgb(244, 247, 234);
+  padding-bottom: 5em;
+}
+
+.card-btns {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-right: 5em;
+  padding-top: 2em;
+}
+
+/*-------------
+GLOBAL STYLINGS
+-------------*/
+
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100%;
+  background-color: #f2f3f5;
+  margin-left: 0;
+}
+
+.logo {
+  padding-left: 2em;
+  height: 6em;
+}
+
+.heading {
+  padding-top: 1em;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  display: flex;
+  text-align: center;
+}
+
+/*------------
+NAVIGATION BAR
+------------*/
+li {
+  list-style-type: none;
+}
+h1 {
+  position: relative;
+  padding-left: 15px;
+}
+
+.nav-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links li {
+  position: relative;
+  background-color: #fff;
+  list-style-type: none;
+}
+
+.nav-links li a {
+  font-size: 17px;
+  display: block;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  background-color: #0096ff;
+  color: #fff;
+}
+
+/*----------------------
+LOGIN and SIGNUP Buttons
+----------------------*/
+
+.login-signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-signup li {
+  position: relative;
+  background-color: #fff;
+  list-style: none;
+  padding-right: 1em;
+}
+
+.login-signup li a {
+  font-size: 15px;
+  display: block;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.login-signup li a:hover,
+.login-signup li a:active {
+  background-color: #0096ff;
+  color: #fff;
+}
+
+/*-----------------
+SIDE NAVIGATION BAR
+-----------------*/
+.side-nav {
+  height: 100%;
+  width: 0;
+  background-color: rgba(90, 90, 90, 0.95);
+  list-style-type: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5;
+  padding-top: 50px;
+}
+
+.side-nav.open {
+  width: 240px;
+}
+
+.open-btn {
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 38px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
+.close-btn:hover,
+.open-btn:hover {
+  color: #0096ff;
+}
+
+.menu-links a {
+  display: block;
+  color: #fff;
+  padding: 12px 18px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-links a:hover {
+  color: #0096ff;
+}
+
+/*--------------------
+LOGIN and SIGN-UP FORM
+--------------------*/
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  padding-bottom: 25em;
+}
+
+.login-form,
+.signup-form {
+  padding: 20px;
+}
+
+form {
+  /* border: 2px solid #000; */
+  width: 25%;
+  height: 5vh;
+}
+
+form label {
+  font-weight: 600;
+}
+
+form input[type='text'],
+input[type='password'],
+input[type='number'],
+select {
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000;
+  width: 100%;
+}
+
+form input[type='checkbox'] {
+  margin: 10px 0;
+}
+
+.login-button,
+.signup-button {
+  width: 100%;
+  background-color: #0096ff;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  margin: 8px 0;
+  transition: 0.3s ease-in-out;
+}
+
+.login-button:hover,
+.login-button:active,
+.signup-button:hover,
+.signup-button:active {
+  color: #fff;
+}
+
+/*-----------
+NEW LOAN FORM
+-----------*/
+
+.loanf-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 45em;
+}
+
+.loan-f {
+  width: 17%;
+}
+
+.loan-form select {
+  cursor: pointer;
+  background-image: url('./arrow-down.png');
+  background-color: #fff;
+  color: #000;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 285px center;
+  appearance: none;
+}
+
+/*----
+FOOTER
+----*/
+
+.footer {
+  background-color: #fff;
+  position: absolute;
+  margin-top: 10%;
+  bottom: 0;
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer p {
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding-top: 15px;
+}
+
+.footer ul li {
+  display: inline;
+}
+
+.footer a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer a {
+  padding: 10px;
+  color: #000;
+}
+
+a:hover,
+a:active {
+  color: #0096ff;
+}
+
+/*-------------
+NAVBAR CONTENTS
+-------------*/
+
+.main-content {
+  justify-content: center;
+  align-items: center;
+}
+
+/*-------
+HOME PAGE
+-------*/
+
+.home {
+  flex-direction: column;
+  padding-bottom: 3em;
+}
+
+.welcome {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.homepage {
+  padding-bottom: 3em;
+}
+
+/*-------------
+ABOUT US PAGE
+-------------*/
+.about-column {
+  float: left;
+  width: 33%;
+  margin-bottom: 16px;
+}
+
+.about-card {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0.5em;
+  height: 100%;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.about-container {
+  margin-bottom: 2em;
+  padding: 0 16px;
+}
+
+.about-column {
+  padding-bottom: 5em;
+}
+
+.about-container::after,
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  text-align: center;
+}
+
+.about-heading {
+  display: block;
+  text-align: center;
+  padding-top: 1em;
+  font-weight: bold;
+}
+
+.about-img {
+  width: 100%;
+}
+
+.about-desc {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 650px) {
+  .about-column {
+    width: 100%;
+    display: block;
+  }
+}
+
+#root {
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  padding-bottom: 10em;
+  min-height: 100vh;
+}
+
+/*-------------
+CONTACT US PAGE
+-------------*/
+/* Style inputs with type="text", select elements and textareas */
+input[type='text'],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.contact-form {
+  min-height: 100vh;
+  height: 100%;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contact-submit {
+  background-color: rgb(90, 90, 90);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.contact-submit:hover {
+  background-color: lightgray;
+}
+
+/*-------------
+CONTACT US PAGE
+-------------*/
+
+.monthly-amount {
+  width: 10% !important;
+}
+
+.monthly-input {
+  margin-top: 2em;
+  margin-left: 2em;
+  display: block;
+}
+
+.github {
+  align-items: center;
+  text-align: center;
+}
+
+.github-link {
+  align-items: center;
+  text-align: center;
+}
+
+.get-started {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.get-started:hover {
+  background-color: lightgreen;
+}
